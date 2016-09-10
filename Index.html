@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styleplus.css">
+    <script src="https://use.fortawesome.com/1a6d3b0b.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/jsExperiencias.js"></script>
+    <title>Experiencias Xcaret</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-inverse navbar-static-top small" style="margin-bottom: 0">
+      <div class="container">
+        <ul class="nav navbar-nav navbar-right">
+          <li>
+            <a href="#"><i class="fa fa-telephone"></i>ATENCION AL CLIENTE</a>
+          </li>
+          <li>
+            <a href="#"><i class="fa fa-torso"></i>ACCEDER/REGISTRAR</a>
+          </li>
+          <li>
+            <a href="#"><i class="fa fa-shopping-cart"></i>CARRITO</a>
+          </li>
+          <li>
+            <a href="#">MXN-$</a>
+          </li>
+          <li>
+            <a href="#">IDIOMA</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <header>
+      <div class="jumbotron"><!---->
+        <div class="container">
+          <div class="pull-left">
+            <h2>LOGOTIPO</h2>
+            <h6>OPERADO POR EXPERIENCIAS XCARET</h6>
+          </div>
+          <div class="pull-right">
+            <nav class="navbar">
+              <ul class="nav navbar-nav small">
+                <li>
+                  <a href="#"><i class="fa fa-home-fi fa-lg"></i>INICIO</a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa fa-camera fa-lg"></i>MIS FOTOS</a>
+                </li>
+                <li>
+                  <a href="#">PREGUNTAS FRECUENTES</a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa fa-social-facebook fa-2x"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa fa-social-twitter fa-2x"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa fa-social-instagram fa-2x"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa fa-play-video fa-2x"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa fa-social-pinterest fa-2x"></i></a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div class="btn-group btn-group-justified" role="group">
+            <div class="btn-group" role="group">
+              <button type="button" class="btn btn-default btn-Menu">QUIERO...</button>
+            </div>
+            <div class="btn-group" role="group">
+              <button type="button" class="btn btn-default btn-Menu">SABER MÁS DEL PARQUE...</button>
+            </div>
+            <div class="btn-group" role="group">
+              <button type="button" class="btn btn-default btn-Menu">COMPRAR MI ENTRADA A...</button>
+            </div>
+            <div class="btn-group" role="group">
+              <button type="button" class="btn btn-default btn-Menu">AHORRAR MÁS</button>
+            </div>
+            <div class="btn-group" role="group">
+              <button type="button" class="btn btn-default btn-Menu">VER LA GALERÍA...</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="container fi-open-sans">
+        <nav class="navbar nav">
+          <ol class="breadcrumb navBlanco">
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#" id="jsSeccion"></a></li>
+          </ol>
+        </nav>
+        <div class="row">
+          <div class="col-md-8">
+            <div class="embed-responsive embed-responsive-16by9">
+              <video id="player1" preload="none">
+                  <source type="video/youtube" src="https://www.youtube.com/watch?v=A-2w7_qTSVQ&" />
+              </video>
+            </div>
+            <div class="btn-group btn-group-justified" role="group">
+              <div class="btn-group" role="group">
+                <button type="button" class="btn btn-default"><i class="fa fa-photo fa-2x"></i>Ver imágenes</button>
+              </div>
+              <div class="btn-group" role="group">
+                <button type="button" class="btn btn-default"><i class="fa fa-eye fa-2x fa-padding"></i>Vista 360°</button>
+              </div>
+            </div>
+            <div><h3><p id="jsTituloH1"></p></h3><hr/>
+            </div>
+            <div id="jsDescripcion" class="text-justify">
+            </div>
+            <div id="Atractivos"><h3>Atractivos principales</h3><hr/>
+            </div>
+            <div id="jsAtractivos"> <!--Lista de atractivos principales desde json-->
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="center-block black text-center padding5">
+              <p class="text-uppercase"><h4>COMPRA AQUÍ</h4></p>
+              Y obtén hasta un 15% de descuento
+            </div>
+            <div class="row center-block padding5 lead"><p><strong>NOMBRE DEL PRODUCTO</strong></p></div>
+            <div class="row center-block small">Precio regular: <del>$0,000.00 MXN</del></div>
+            <div class="row center-block lead">Precio en línea: $0,000.00 MXN</div>
+            <div class="checkbox">
+              <label>
+                <input type="checkbox"> Agregar transportación redonda desde tu hotel: <strong>$0,000.00 MXN</strong>
+              </label>
+            </div>
+            <div class="checkbox">
+              <label>
+                <input type="checkbox"> Agregar Foto Pase: <strong>$0,000.00 MXN</strong>
+              </label>
+            </div>
+            <div class="row lead text-center"><strong>Total: $0,000.00 Mxn</strong></div>
+            <div class="center-block">
+              <button type="button" name="button" class="text-uppercase btn btn-block">Comprar Ahora</button>
+            </div>
+            <div class="small"><em>
+              <p>*10% de descuento - reservando con 7-20 días de anticipación.</p>
+              <p>*15% de descuento - reservando con 21 días o más de anticipación.</p>
+              <p>*Precios sujetos a cambios sin previo aviso.</p></em>
+            </div>
+            <hr/>
+            <h5>¿Por qué reservar con nosotros?</h5>
+            <div class="row table-bordered text-center">
+              <div class="col-sm-4 table-bordered"><p class="lead strong">-10%</p><small>EN TU COMPRA*</small></div>
+              <div class="col-sm-4 table-bordered"><p class="lead strong">-15%</p><small>EN TU COMPRA*</small></div>
+              <div class="col-sm-4 table-bordered"><p class="lead strong">-50%</p><small>PARA NIÑOS*</small></div>
+            </div>
+            <div class="row table-bordered text-center">
+              <div class="col-sm-4 table-bordered"><p><i class="fa fa-credit-card fa-2x fa-padding"></i></p><small>MESES SIN INTERESES</small></div>
+              <div class="col-sm-4 table-bordered"><p><i class="fa fa-lock fa-2x fa-padding"></i></p><small>COMPRA<br/> SEGURA</small></div>
+              <div class="col-sm-4 table-bordered"><p><i class="fa fa-usd fa-2x fa-padding"></i></p><small>PRECIO + BAJO GARANTIZADO</small></div>
+            </div>
+            <div class="row table-bordered text-center">
+              <div class="col-sm-4 table-bordered"><p><i class="fa fa-crown fa-2x fa-padding"></i></p><small>TAQUILLAS ESPECIALES</small></div>
+              <div class="col-sm-4 table-bordered"><p><i class="fa fa-cloud fa-2x fa-padding"></i></p><small>GARANTÍA MAL CLIMA</small></div>
+              <div class="col-sm-4 table-bordered"><p><i class="fa fa-shield fa-2x fa-padding"></i></p><small>SEGURO <br/>DE VIAJE</small></div>
+            </div>
+          </div>
+        </div>
+        <div class="row padding10">
+          <button type="button" name="button" class="btn lead center-block btn-lg padding10" href="">Cotizar mi entrada ahora</button>
+        </div>
+        <div class="row padding10"> <!--Banner tarjetas-->
+          <div class="col-sm-12 table-bordered padding10" >
+            <img src="Img/logo-msi-2-1.png" alt="" class="center-block"/>
+            <p class="center-block">Con los principales bancos y tarjetas emitidas en México. No aplica con Paypal. <a href="#">Ver opciones »</a></p>
+          </div>
+        </div>
+    </div>
+    <footer>
+      <div class="footer-above">  <!--Sección de Logos de empresa y links-->
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12 tituloXcaret lead strong center-block fi-raleway">experiencias xcaret</div>
+          </div>
+          <div class="row">
+            <div class="col-md-4"><img src="Img/logos/xcaret.png" alt="" class="center-block"/></div>
+            <div class="col-md-4"><img src="Img/logos/xel-ha.png" alt="" class="center-block"/></div>
+            <div class="col-md-4"><img src="Img/logos/xplor.png" alt="" class="center-block"/></div>
+            <div class="col-md-4"><img src="Img/logos/xichen.png" alt="" class="center-block"/></div>
+            <div class="col-md-4"><img src="Img/logos/xenotes.png" alt="" class="center-block"/></div>
+            <div class="col-md-4"><img src="Img/logos/xoximilco.png" alt="" class="center-block"/></div>
+          </div>
+          <div class="row textoBlanco">
+            <div class="col-md-4"><h5>ACERCA DE</h5>
+              <ul class="list-unstyled">
+                <li><a href="#" class="href">Nuestra Empresa</a></li>
+                <li><a href="#" class="href">Bolsa de Trabajo</a></li>
+                <li><a href="#" class="href">Conoce Quintana Roo</a></li>
+              </ul>
+            </div>
+            <div class="col-md-4"><h5>DE INTERÉS</h5>
+              <ul class="list-unstyled">
+                <li><a href="#" class="href">Afiliados</a></li>
+                <li><a href="#" class="href">Agencias Online</a></li>
+                <li><a href="#" class="href">Grupos</a></li>
+                <li><a href="#" class="href">Bodas</a></li>
+                <li><a href="#" class="href">Avión + Hotel + Transportación</a></li>
+                <li><a href="#" class="href">Sala de Prensa</a></li>
+              </ul>
+            </div>
+            <div class="col-md-4"><h5>LEGAL</h5>
+              <ul class="list-unstyled">
+                <li><a href="#" class="href">Términos de uso</a></li>
+                <li><a href="#" class="href">Aviso de Privacidad</a></li>
+                <li><a href="#" class="href">Mapa de sitio</a></li>
+                <li><a href="#" class="href">Contáctanos</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-below">
+        <div class="container">
+          <div class="row textoBlanco">
+            <div class="col-md-12 padding10">Atención a Clientes/Ventas:</div>
+          </div>
+          <div class="row textoBlanco">  <!--Lista de números de atención en diferentes ciudades-->
+            <div class="col-md-4">
+              <ul class="list-unstyled">
+                <li><a href="#" class="href">Cancún: 000-000-0000</a></li>
+                <li><a href="#" class="href">Brasil: 000-000-0000</a></li>
+                <li><a href="#" class="href">Colombia: 000-000-0000</a></li>
+              </ul>
+            </div>
+            <div class="col-md-4">
+              <ul class="list-unstyled">
+                <li><a href="#" class="href">Playa del Carmen: 000-000-0000</a></li>
+                <li><a href="#" class="href">Argentina: 000-000-0000</a></li>
+                <li><a href="#" class="href">España: 000-000-0000</a></li>
+              </ul>
+            </div>
+            <div class="col-md-4">
+              <ul class="list-unstyled">
+                <li><a href="#" class="href">USA/Canadá: 000-000-0000</a></li>
+                <li><a href="#" class="href">Venezuela: 000-000-0000</a></li>
+                <li><a href="#" class="href">Chile: 000-000-0000</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="text-justify textoBlanco padding10">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer purus neque, posuere ac accumsan quis, gravida vitae neque.
+            <br/>Sed tristique mi libero, vel facilisis ipsum ultricies nec. Nulla bibendum in urna vehicula bibendum.</p>
+            ©Mauris fringilla auctor vulputate.
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+<script>
+ $(document).ready(function(){
+    $.getJSON('https://experienciasxcaret.github.io/Developers/api/front.json',function(result){
+        $.each(result, function(i, field){
+            $("#jsDescripcion").append(field.descripcion+ " ");
+            $("#jsTituloH1").append(field.tituloH1+ " ");
+            $("#jsSeccion").append(field.seccion+ "...");
+        });
+    });
+    $.getJSON('https://experienciasxcaret.github.io/Developers/api/front.json',function(result){
+
+       var atractivos = result[0].atractivos;
+       $.each(atractivos, function(i,item){
+         $("#jsAtractivos").append("<div class='row'><div class='col-sm-4 text-justify'><a href='"+item.link+"'><img src='"+item.img +"' alt='"+item.titulo+"' class='img-thumbnail'></a></div><div class='col-sm-8'> <p class='text-uppercase'>"+item.titulo+"</p>"+ item.desc +"</div></div>");
+          });
+    });
+  });
+  </script>
+</html>
